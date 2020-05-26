@@ -1,0 +1,59 @@
+$auto: 20px auto;
+$w: 500px;
+$h: 50px;
+.publicWM {
+    width:$w;
+    margin:$auto;
+}
+@mixin  color($color) {
+    background:$color;
+}
+@mixin float(){
+    float:left;
+    width:$w / 5;
+    height:$h;
+}
+.cell1{
+    @include float;
+    @include color(lightgreen);
+}
+.cell2{
+    @include float;
+    @include color(lightsalmon);
+}
+.cell3{
+    @include float;
+    @include color(lightyellow);
+}
+.cell4{
+    @include float;
+    @include color(lightseagreen);
+}
+.cell5{
+    @include float;
+    @include color(lightcoral);
+}
+.wrapper{
+    width:100%;
+
+    .header{
+        @extend .publicWM;
+        background-color: lightpink;
+        height:$h * 2;
+    }
+    .section{
+        @extend .publicWM;
+        background:lightskyblue;
+        height:$h * 4;
+    }
+    .footer{
+        width:100%;
+        background-color: lightgoldenrodyellow;
+        height:$h;
+    }
+}
+
+
+
+
+

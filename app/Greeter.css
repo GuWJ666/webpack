@@ -1,0 +1,9 @@
+.root{
+    background:#fff;
+    padding:20px;
+    border:3px solid #333;
+}
+.cell{
+    background:lightgreen;
+    padding:20px;
+}
